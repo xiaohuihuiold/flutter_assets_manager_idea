@@ -1,23 +1,22 @@
 <idea-plugin>
     <id>com.xhhold.idea.fam.flutter_assets_manager</id>
     <name>Flutter Assets Manager</name>
-    <vendor email="xiaohuihuiold@gmail.com" url="https://blog.xhhold.com/">xiaohuihui</vendor>
+    <version>1.1</version>
+    <idea-version since-build="145.0"/>
+    <vendor email="xiaohuihuiold@gmail.com" url="https://blog.xhhold.com/">xiaohuihuiold</vendor>
 
     <description><![CDATA[
     Flutter's assets manager
+    Manage your assets resources
     ]]></description>
 
-    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
-         on how to target different products -->
-    <!-- uncomment to enable plugin in all products
     <depends>com.intellij.modules.lang</depends>
-    -->
 
     <extensions defaultExtensionNs="com.intellij">
-        <!-- Add your extensions here -->
+        <toolWindow id="Fam" anchor="left" factoryClass="com.xhhold.idea.fam.factory.FamWindowFactory"/>
     </extensions>
 
     <actions>
-        <!-- Add your actions here -->
+
     </actions>
 </idea-plugin>
